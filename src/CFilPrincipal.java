@@ -9,26 +9,23 @@ public class CFilPrincipal {
             // Menú de opciones
             System.out.println("Introduce una opcion 1 ( 1.1) / 2 (1.2) / 3 (1.4) / 4 Salir");
             con = S1.nextInt();
-
-            // Control de flujo según la opción elegida
             switch (con) {
                 case 1:
-                    parte1();  // Llamada al método parte1 para la opción 1
+                    parte1();  
                     break;
                 case 2:
-                    parte2();  // Llamada al método parte2 para la opción 2
+                    parte2();  
                     break;
                 case 3:
-                    parte3();  // Llamada al método parte3 para la opción 3
+                    parte3();  
                     break;
                 case 4:
-                    System.out.println("Cerrando Programa...");  // Mensaje de salida
+                    System.out.println("Cerrando Programa...");  
                     break;
             }
-        } while (con != 4);  // Salir del bucle cuando la opción sea 4 (Salir)
+        } while (con != 4);  
     }
 
-    // Método para la opción 1
     public static void parte1() {
         System.out.println("ej 1.1\n");
         CFil h1 = new CFil("Hijo1");
@@ -43,7 +40,7 @@ public class CFilPrincipal {
         System.out.println("Proceso padre terminado\n");
     }
 
-    // Método para la opción 2
+ 
     public static void parte2() {
         System.out.println("ej 1.2\n");
         CFil h2 = new CFil("Hijo2");
@@ -55,8 +52,7 @@ public class CFilPrincipal {
             // Espera hasta que el hilo h2 termine
         }
     }
-
-    // Método para la opción 3
+    
     public static void parte3() {
         CFil c;
         System.out.println("Cuantos procesos quieres hacer: ");
